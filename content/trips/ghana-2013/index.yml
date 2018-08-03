@@ -1,0 +1,7 @@
+title: Ghana 2013
+type: trip
+header:                # Our header part of the layout
+  - /_shared/header.md # This is the header and we got it from another folder we use to share partials
+
+main: 
+  - posts.md

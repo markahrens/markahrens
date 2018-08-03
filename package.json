@@ -1,0 +1,28 @@
+{
+  "name": "markahrens",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "docs": "cuttlebelle docs",
+    "build:site": "cuttlebelle",
+    "build:sass": "node-sass --output-style compressed -o assets/css sass/style.scss",
+    "build:js": "uglifyjs js/script.js --compress --output assets/js/script.js",
+    "build": "npm run build:sass && npm run build:js && npm run build:site",
+    "watch:sass": "onchange 'sass/**/*.scss' -- npm run build:sass",
+    "watch:js": "onchange 'js/**/*.js' -- npm run build:js",
+    "watch:site": "cuttlebelle watch -n",
+    "watch": "npm run build && npm run watch:sass | npm run watch:js | npm run watch:site"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "onchange": "^3.3.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "moment": "^2.22.2",
+    "node-sass": "^4.7.2",
+    "uglify-js": "^3.3.7"
+  }
+}

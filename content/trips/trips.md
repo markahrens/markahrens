@@ -1,0 +1,4 @@
+---
+layout: listTrips
+title: Trips
+---
