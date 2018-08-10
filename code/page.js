@@ -5,7 +5,7 @@ import React from 'react';
 /**
  * The page layout component
  */
-const Page = ({ title, stylesheet, header, main, footer, script, _relativeURL, _ID }) => (
+const Page = ({ title, stylesheet, primaryimage, main, script, _relativeURL, _ID }) => (
 	<html>
 	<head>
 		<title>{ title } - Mark Ahrens</title>
@@ -21,18 +21,22 @@ const Page = ({ title, stylesheet, header, main, footer, script, _relativeURL, _
 		}
 	</head>
 	<body>
-		<div className="top">
-			<header role="banner">
-				{ header }
-			</header>
-
-			<main>
-				{ main }
-			</main>
-		</div>
+		<header>
+			<p><a href="/">Mark Ahrens</a></p>
+			<nav>
+				<ul>
+					<li><a href="/posts">Posts</a></li>
+					<li><a href="/trips">Trips</a></li>
+				</ul>
+			</nav>
+		</header>
+		{ primaryimage }
+		<main>
+			{ main }
+		</main>
 
 		<footer>
-			{ footer }
+			Copyright Mark Ahrens
 		</footer>
 
 		{
@@ -55,10 +59,6 @@ Page.propTypes = {
 	 */
 	main: PropTypes.node.isRequired,
 
-	/**
-	 * footer: (partials)(2)
-	 */
-	footer: PropTypes.node.isRequired,
 };
 
 Page.defaultProps = {};

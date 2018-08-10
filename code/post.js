@@ -6,21 +6,13 @@ import React from 'react';
 /**
  * The post component
  */
-const Post = ({ title, image, date, _body }) => {
-	const publishDate = Moment( date );
-
+const Post = ({ title, _body, _pages, _ID}) => {
+	const publishDate = Moment( _pages[_ID].date );
 	return (
-    <div className="post">
-      <img className="post-photo" src={ image } />
-      
-      <div className="post-content">
-        <h1 className="post-title">{ title  }</h1>
-        <p className="post-meta">{ publishDate.format('MMM DD, YYYY') }</p>
-
-        <article>
-        { _body }
-        </article>
-      </div>
+    <div>
+      <h1 className="post-title">{ _pages[_ID].title  }</h1>
+      <p className="post-meta">{ publishDate.format('MMM DD, YYYY') }</p>
+      { _body }
     </div>
 	);
 };

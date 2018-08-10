@@ -1,7 +1,10 @@
 title: Lots of Travel
 
-header:                # Our header part of the layout
-  - /_shared/header.md # This is the header and we got it from another folder we use to share partials
+primaryimage:
+  - mainimage.md
+
+date: 2013-05-24
 
 main: 
   - body.md
+

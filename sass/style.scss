@@ -1,30 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:400,400i,600,800');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700');
+
+
+$primary-accent: #29684c;
+$light-accent: #f7fffb;
+$dark-grey: #424242;
 
 body{
-  font-family: 'Overpass', sans-serif;
-  background-color: #EEEEEE;
-  color: #424242;
+  font-family: 'PT Serif', serif;
+  background-color: $light-accent;
+  color: $dark-grey;
   margin: 0;
+  font-weight: 400;
 }
 
+
+
 header{
-  background-color: #424242;
-  color: #EEEEEE;
-  display: flex;
-  justify-content: space-between;
+  background-color: $dark-grey;
+  color: $light-accent;
   padding: 5px 15px;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
   a{
-    color: #EEEEEE;
+    color: $light-accent;
     text-decoration: none;
   }
   p{
-    display: inline;
-    margin: 0;
-    font-weight: 800;
+    position: absolute;
+    left: 30px;
+    top: 0;
     font-size: 1.6rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: $primary-accent;
   }
   ul{
     margin: 0;
+    text-align: right;
     li{
       display: inline;
       padding: 0 15px;
@@ -34,20 +48,89 @@ header{
   }
 }
 
-.post{
-  .post-photo{
+.full-width-image{
+  img{
     max-width: 100%;
-      height: auto;
+    height: auto;
   }
-  .post-content{
-    width: 90%;
-    max-width: 720px;
-    margin: 0 auto;
+}
+
+main{
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+  h1, h2, h3{
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  p, ul{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    a{
+      color: $primary-accent;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .photo-collection{
+    margin: 0 -100px;
+    display: flex;
+    flex-wrap: wrap;
+    .photo{
+      margin: 0 1%;
+      max-width: 640px;
+      flex-basis: 31%;
+      img{
+        width: 100%;
+        height: auto;
+      }
+      p{
+        font-family: 'PT Sans', sans-serif;
+        margin: 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .pull-image{
+    background-color: #FFF;
+    position: relative;
+    margin-bottom: 40px;
+    img{
+      max-width: 400px;
+      height: auto;
+    }
+    p{
+      font-size: 0.8rem;
+      position: absolute;
+      font-family: 'PT Sans', sans-serif;
+      padding: 5px 15px;
+      font-weight: 700;
+      background-color: #000000DD;
+      color: $light-accent;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0;
+    }
+    &.right{
+      float: right;
+      margin-right: -50px;
+      margin-left: 50px;
+    }
+    &.left{
+      float: left;
+      margin-left: -50px;
+      margin-right: 50px;
+    }
   }
 }
 
 footer{
   padding: 15px;
-  background-color: #424242;
-  color: #EEEEEE;
+  background-color: $dark-grey;
+  color: $light-accent;
 }

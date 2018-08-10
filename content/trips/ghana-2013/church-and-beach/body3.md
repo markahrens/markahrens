@@ -1,0 +1,5 @@
+---
+layout: text
+---
+
+After dinner, the electricity had been restored in our room. For most of the day, it had been out, with the explanation being that someone cut one of the wires, which nearly led to a fire. In any case, it is working now, so we don’t have to sleep in the heat with no air flow. We then walked down to the internet café, where a guy was sitting watching porn when we walked in. The machines were quite old and ran very slowly. At that point, I found out that I could get the wireless password, so I used my phone to send some emails and text with Rebekah. It was great to hear her day today was going better. It is still tough being so far away, not as bad as last night, but still rough. It seems like every kid I see close to Will and Henry’s ages, I am instantly reminded of how far away they are.

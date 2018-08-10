@@ -1,8 +1,5 @@
 ---
 layout: post
-title: Lots of Travel
-image: /assets/img/trips/ghana-2013/akwaaba.jpg
-date: 2013-05-24
 ---
 
 The thing I was most concerned about before the trip was the goodbyes. The whole family did breakfast at Bluebird Cafe. No one quite ate the pancakes they thought they could. Will because there was bacon, but Rebekah and I because we each had butterflies about the trip. As we were leaving, the family behind us stopped us, saying they couldn’t help but overhear about my trip. They told us they had gone through something similar the previous summer, and that it all worked out alright. Sometimes God works in powerful and mysterious ways, and with this trip, he has been there a number of times already.
