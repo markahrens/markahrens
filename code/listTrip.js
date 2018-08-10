@@ -11,6 +11,7 @@ const ListTrip = ({ _pages, _relativeURL, _ID, title }) => (
       {
           Object.keys( _pages )
           .filter( page => _pages[ page ]._url.startsWith('/'+_ID+'/') )
+          .sort((a,b) => _pages[ a ].date > _pages[ b ].date)
 					.map( ( page, i ) =>
 						<li key={ i }>
 							<a href={ _relativeURL( _pages[ page ]._url, _ID ) }>{ _pages[ page ].title }</a>
